@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criminal Activity Detection System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Criminal Activity & Object Detection System</h1>
+        <p>Real-Time Monitoring Dashboard</p>
+    </header>
+
+    <main class="container">
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h2>Camera Status</h2>
+                <p class="status active">Active</p>
+            </div>
+
+            <div class="card">
+                <h2>Detection Status</h2>
+                <p class="status detected">Object Detected</p>
+            </div>
+
+            <div class="card">
+                <h2>Alert Level</h2>
+                <p class="status warning">Medium</p>
+            </div>
+
+        </section>
+
+        <section class="video-section">
+
+            <div class="video-box">
+                <img src="assets/images/camera-feed.jpg" alt="Camera Feed">
+            </div>
+
+            <div class="details-box">
+                <h2>Detection Details</h2>
+
+                <table>
+                    <tr>
+                        <th>Detected Object</th>
+                        <td>Suspicious Activity</td>
+                    </tr>
+
+                    <tr>
+                        <th>Confidence</th>
+                        <td>92%</td>
+                    </tr>
+
+                    <tr>
+                        <th>Location</th>
+                        <td>Zone A</td>
+                    </tr>
+
+                    <tr>
+                        <th>Time</th>
+                        <td id="time"></td>
+                    </tr>
+                </table>
+
+                <button id="refreshBtn">Refresh Data</button>
+
+            </div>
+
+        </section>
+
+        <section class="logs-section">
+
+            <h2>Recent Detection Logs</h2>
+
+            <table class="logs-table">
+
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="logTable">
+                    <tr>
+                        <td>10:12 AM</td>
+                        <td>Object Detected</td>
+                        <td class="success">Verified</td>
+                    </tr>
+
+                    <tr>
+                        <td>10:30 AM</td>
+                        <td>Suspicious Movement</td>
+                        <td class="pending">Under Review</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:05 AM</td>
+                        <td>Unauthorized Access</td>
+                        <td class="danger">Alert Generated</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Criminal Activity Detection System | Developed by Nisigandha Mallick</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
